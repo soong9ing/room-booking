@@ -13,6 +13,7 @@
   main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
   h1 { font-size:24px; margin:0 0 4px; }
   .sub { color:var(--muted); margin:0 0 20px; font-size:14px; }
+  .rules { background:#eef2fb; border-radius:10px; padding:12px 12px 12px 30px; margin:0 0 16px; font-size:14px; line-height:1.7; }
   #loading { padding:14px; background:#fff8e1; border-radius:10px; margin-bottom:16px; }
   section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; margin-bottom:16px; }
   h2 { font-size:17px; margin:0 0 12px; }
@@ -36,6 +37,13 @@
 <main>
   <h1>강의실 예약 시스템</h1>
   <p class="sub">강의실: A101 · A102 · B201 / 요일: 월~금 / 운영 9시~21시</p>
+  <ul class="rules">
+    <li>한 번에 <b>최대 3시간</b>까지 예약할 수 있어요.</li>
+    <li>시간은 <b>정수(시)</b>로만 입력해요. 예: 10 ~ 12</li>
+    <li>21시 안에 끝나야 해요.</li>
+    <li>한 사람은 <b>같은 요일에 2건</b>까지만 예약할 수 있어요.</li>
+    <li>예약을 취소하려면 예약한 사람의 이름을 입력해야 해요.</li>
+  </ul>
   <div id="loading">시스템을 불러오는 중입니다… (처음엔 10~20초 걸릴 수 있어요)</div>
 
   <datalist id="rooms"><option value="A101"><option value="A102"><option value="B201"></datalist>
